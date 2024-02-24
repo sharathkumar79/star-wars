@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import PlanetsDirectory from "./components/PlanetsDirectory";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='header'> 
+    <h1>Star Wars Planets Explorer</h1>
     </div>
+    <div className='main'>
+      <PlanetsDirectory/>
+    </div>
+    {/* <div className='footer'>
+        <p>&copy; 2024 Star Wars Planets Explorer. All rights reserved.</p>
+    </div> */}
+    </>
   );
 }
 
